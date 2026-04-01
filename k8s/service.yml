@@ -9,15 +9,4 @@ spec:
   ports:
     - port: 80
       targetPort: 3000
-      nodePort: 30007apiVersion: v1
-kind: Service
-metadata:
-  name: gitops-service
-spec:
-  type: NodePort
-  selector:
-    app: gitops-app
-  ports:
-    - port: 80
-      targetPort: 3000
       nodePort: 30007
